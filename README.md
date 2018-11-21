@@ -1,2 +1,4 @@
-# skedv2
-The new location for the cross platform social scheduling application called Sked
+# Sked
+A cross platform social scheduling application. Designed for organization, with efficiency in mind.
+
+Stay tuned for updates!
