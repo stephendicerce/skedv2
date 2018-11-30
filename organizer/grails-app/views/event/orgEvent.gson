@@ -1,0 +1,16 @@
+import organizer.AuthToken
+import organizer.Event
+
+model {
+    AuthToken token
+    Event event
+}
+
+response.status OK.value()
+json{
+    status "success"
+    data {
+        accessToken token.accessToken
+        event g.render(template: "/templates/orgEvent", model: [event: event])
+    }
+}

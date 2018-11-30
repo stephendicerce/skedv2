@@ -1,0 +1,16 @@
+import organizer.AuthToken
+import organizer.Organization
+
+response.status OK.value()
+model {
+    AuthToken token
+    Collection<Organization> organizations = []
+}
+
+json {
+    status "success"
+    data {
+        token token.accessToken
+        organizations g.render(template: "/templates/organizations", model: [organizations:organizations])
+    }
+}

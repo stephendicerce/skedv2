@@ -1,0 +1,8 @@
+#headerGrad {
+    height: 200px;
+    background: rgb(0, 189, 255); /*for browsers without gradient support*/
+
+    background: linear-gradient(to right, rgb(0,189, 255), white);
+
+
+}

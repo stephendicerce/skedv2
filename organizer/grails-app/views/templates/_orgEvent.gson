@@ -1,0 +1,22 @@
+import organizer.Event
+
+model {
+    Event event
+}
+
+json {
+    id event.id
+    orgId event.organization.id
+    name event.name
+    description event.description
+    startingMonth event.startingMonth
+    startingDay event.startingDay
+    startingYear event.startingYear
+    dueMonth event.dueMonth
+    dueDay event.dueDay
+    dueYear event.dueYear
+    dueHour event.dueHour
+    dueMinute event.dueMinute
+    color event.color
+    isPrivate event.isPublic
+}
