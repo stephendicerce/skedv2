@@ -1,6 +1,0 @@
-import organizer.Organization
-
-model {
-    Collection<Organization> organizations = []
-}
-json tmpl.'/templates/organization'(organizations)

@@ -1,7 +1,0 @@
-import organizer.User
-
-model {
-    Collection<User> applicationUsers = []
-}
-
-json tmpl.'/templates/user'(applicationUsers)
