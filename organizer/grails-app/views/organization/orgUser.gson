@@ -1,0 +1,12 @@
+import organizer.User
+
+model{
+    User user
+}
+
+json {
+    success true
+    data {
+        user g.render(template: "/templates/user", model: [user: user])
+    }
+}

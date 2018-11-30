@@ -1,0 +1,7 @@
+import organizer.Event
+
+model {
+    Collection<Event> events = []
+}
+
+json tmpl.'/templates/orgEvent'(events)

@@ -1,0 +1,14 @@
+import organizer.Organization
+
+model {
+    Organization organization
+}
+
+response.status OK.value()
+json {
+    status "success"
+    data {
+        accessToken : organization.orgOwner.authToken.accessToken
+        userOrg g.render(template: "/templates/organization", model: [organization:organization])
+    }
+}
